@@ -10,7 +10,8 @@ const orderController = require("../src/Api/Order/orderController");
 const placeController = require("../src/Api/Places/placeController");
 const configurationsController = require("../src/Api/Configs/configController");
 
-const authMiddleware = require("../middleware/authMiddleware");
+const authMiddleware = require("../src/Middleware/authMiddleware");
+
 
 // Rutas para autenticación de usuarios
 router.post("/newUser", authMiddleware, userController.registerUser);
